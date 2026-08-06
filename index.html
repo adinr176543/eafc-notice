@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAFC Mods - Website Announcement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-background: #1c222a;
+            --lightest-grey: #141a22;
+            --ea-green: #238a5f;
+            --ea-green-glow: rgba(35, 138, 95, 0.4);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+        body {
+            background-color: var(--primary-background);
+            color: #E1E7EC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .notice-card {
+            background: var(--lightest-grey);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-top: 4px solid #ef4444; /* Aksen merah peringatan */
+            border-radius: 16px;
+            padding: 40px 30px;
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+        .notice-icon {
+            font-size: 45px;
+            color: #ef4444;
+            margin-bottom: 20px;
+            animation: pulseWarning 2s infinite;
+        }
+        @keyframes pulseWarning {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        p {
+            font-size: 14px;
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+        p b {
+            color: #f8fafc;
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(35, 138, 95, 0.15);
+            color: #52e5a7;
+            border: 1px solid rgba(35, 138, 95, 0.3);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #52e5a7;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #52e5a7;
+            animation: blink 1.5s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .btn-social {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff0000;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 13px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+            transition: transform 0.2s, background 0.2s;
+        }
+        .btn-social:hover {
+            transform: translateY(-2px);
+            background: #e60000;
+        }
+        .footer-note {
+            margin-top: 30px;
+            font-size: 11px;
+            color: #64748b;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notice-card">
+        <div class="notice-icon">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        
+        <h1>PEMBERITAHUAN WEBSITE</h1>
+        
+        <p>
+            Mohon maaf atas ketidaknyamanannya. Website lama kami di domain <b>eafcmods.site</b> telah terkena <i>takedown</i> oleh pihak Blogger/Google.
+        </p>
+
+        <div class="status-badge">
+            <div class="status-dot"></div>
+            <span>Situs Baru Sedang Dalam Proses Pembuatan Ulang</span>
+        </div>
+
+        <p style="font-size: 13px; margin-bottom: 25px;">
+            Kami sedang membangun ulang platform dengan sistem yang lebih aman dan mandiri. Untuk update mod EAFC terbaru silahkan akses YouTube.
+        </p>
+
+        <!-- Opsional: Tombol diarahkan ke channel YouTube kamu buat info update -->
+        <a href="https://www.youtube.com/@AdyNR" class="btn-social" target="_blank">
+            <i class="fa-brands fa-youtube" style="font-size: 16px;"></i>
+            <span>Ady NR</span>
+        </a>
+
+        <div class="footer-note">
+            © 2026 EAFC Mods. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+</html>
